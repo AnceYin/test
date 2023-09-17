@@ -1,4 +1,3 @@
-#include "pipe.hpp"
 #include <iostream>
 #include <chrono>
 #include <random>
@@ -8,9 +7,8 @@
 
 int main()
 {
-    std::numeric_limits<double>::lowest()
+    std::numeric_limits<double>::lowest();
     auto start = std::chrono::system_clock::now();
-    "test\n" | [](auto i){std::cout<<i;};
     auto end = std::chrono::system_clock::now();
 
     std::random_device rd;  // 种子 
